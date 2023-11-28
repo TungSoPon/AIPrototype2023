@@ -1,4 +1,6 @@
 # AIPrototype2023
+
+Thanapat Sopon
 # วันที่ 21/11/2566
 *Ssh ไว้เชื่อมต่อบน cloud 
 Scp 
