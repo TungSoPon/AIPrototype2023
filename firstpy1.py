@@ -28,7 +28,7 @@ def multiplyby9(input_V):
 
 if __name__ == "__main__":
     input_V = parse_input()
-    print(f'the input num is {input_V.num}')
+    print(f'the input num is {input_V.XX}')
     print("we are in the main function")
     multiplyby9(input_V.num)
     printHello()
