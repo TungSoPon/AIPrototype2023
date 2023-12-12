@@ -1,5 +1,5 @@
 def printhello(): 
-    print("hell word") 
+    print("Hello word") 
 
 def multiplyby9(inputV):
     print(9*inputV)
