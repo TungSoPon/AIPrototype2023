@@ -1,4 +1,4 @@
-import argparse
+import argparse 
 
 def parse_input():
     parser = argparse.ArgumentParser()
@@ -6,7 +6,7 @@ def parse_input():
     parser.add_argument(
         '--num',
         type=int,
-        default=7,
+        required=True,
         help='input for the multiplyby9 function'
     )
 
@@ -14,24 +14,23 @@ def parse_input():
         '--XX',
         type=int,
         default=7,
-        help='input for XX'
+        help='input for the multiplyby9 function'
     )
 
     args = parser.parse_args()
     return args
 
-def printHello():
-    print("Hello World")
+def printhello(): 
+    print("hell word") 
 
-def multiplyby9(inputV):
-    print(9 * inputV)
+def multiplyby9(input_V):
+    print(9*input_V)
 
-if __name__ == "__main__":
-    input_args = parse_input()
-    print(f'the input num is {input_args.num}')
-    print(f'the input XX is {input_args.XX}')
-    print('we are in the main function')
-    multiplyby9(input_args.num)
-    multiplyby9(input_args.XX)
-    printHello()
+if __name__=="__main_": #flow program
+
+    input_V = parse_input()
+    print(f'the input xx is {input_V.XX}')
+    print("we are in the main function")
+    multiplyby9(input_V.num)
+    printhello()
 
