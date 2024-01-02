@@ -34,7 +34,7 @@ def run_command(command):
     return out.decode('utf-8')
 
 if __name__ == "__main__":
-    # basic terminal command
+
     subprocess.run(["ls", "-ltr"])
     subprocess.run(["rm", "-r", "/home/thanapat_window/testfolder1"])
     
@@ -50,6 +50,39 @@ if __name__ == "__main__":
     output3 = run_command(["python", "/home/thanapat_window/codes/AIPrototype2023/firstpy1.py", "--num", "88"])
     print("-----------------------------------")
 
-    # Combine the lengths of the outputs
+    
     total_length = len(output1) + len(output2) + len(output3)
     print("Total length of outputs:", total_length)
+
+
+
+import subprocess
+
+# Function to run a command and return the result
+def run_command(command):
+    process_output = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out, err = process_output.communicate()
+    return int(out.decode('utf-8'))
+
+if __name__ == "__main__":
+    # basic terminal commands
+    subprocess.run(["ls", "-ltr"])
+    subprocess.run(["rm", "-r", "/home/thanapat_window/testfolder1"])
+
+    results = []  # Store the results from each run
+
+    print("frist run num=48 XX=58")
+    results.append(run_command(["python", "/home/thanapat_window/codes/AIPrototype2023/firstpy1.py", "--num", "48", "--XX", "58"]))
+    print("-----------------------------------")
+
+    print("second run num=60 XX=74")
+    results.append(run_command(["python", "/home/thanapat_window/codes/AIPrototype2023/firstpy1.py", "--num", "60", "--XX", "74"]))
+    print("-----------------------------------")
+
+    print("third run num=88")
+    results.append(run_command(["python", "/home/thanapat_window/codes/AIPrototype2023/firstpy1.py", "--num", "88"]))
+    print("-----------------------------------")
+
+    # Sum up the results
+    total_sum = sum(results)
+    print("Total Sum:", total_sum)
