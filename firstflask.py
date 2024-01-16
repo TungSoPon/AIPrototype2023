@@ -16,13 +16,19 @@ def hellotung():
 
 @app.route("/home", methods=['POST','GET'])
 def homefn():
-    print('we are in home', file=sys.stdout)
-
-    namein = request.form.get('fname')
-    lastnamein = request.form.get('lname')
-    print(namein, file=sys.stdout)
-    print(lastnamein, file=sys.stdout)
-    return render_template("home.html",name=namein)
+    if request.method == "GET":
+       print('we are in home(GET)', file=sys.stdout)
+       name = request.args.get('fname')
+       print(namein, file=sys.stdout)
+       return render_template("home.html",name=namein)
+    
+    elif request.method == "POST":
+       print('we are in home(POST)', file=sys.stdout)
+       namein = request.form.get('fname')
+       lastnamein = request.form.get('lname')
+       print(namein, file=sys.stdout)
+       print(lastnamein, file=sys.stdout)
+       return render_template("home.html",name=namein)
 
 if __name__ == "__main__": # ต้อง IP VM เราแล้วตามด้วย :5001
     app.run(host='0.0.0.0' ,debug=True,port=5001) #0.0.0.0 คือเข้าได้ในอินเตอร์เน็ท
