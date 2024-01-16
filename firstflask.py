@@ -20,7 +20,7 @@ def homefn():
        print('we are in home(GET)', file=sys.stdout)
        name = request.args.get('fname')
        print(namein, file=sys.stdout)
-       return render_template("home.html",name=namein)
+       return render_template("home.html",name=name)
     
     elif request.method == "POST":
        print('we are in home(POST)', file=sys.stdout)
