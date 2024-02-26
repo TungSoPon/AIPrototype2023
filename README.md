@@ -3,10 +3,10 @@
  ID : 633020444-1 : SIDS
  
 # วันที่ 21/11/2566
--Ssh ไว้เชื่อมต่อบน cloud 
--Scp 
--Exit ออก
--Pwd เราอยู่ไหน
+- Ssh ไว้เชื่อมต่อบน cloud 
+- Scp 
+- Exit ออก
+- Pwd เราอยู่ไหน
 -Ssh ชื่อ ACC @ IP
 -Htop เพื่อดูเครื่องเรา
 -scp -r testfolder1/ thanapat_window@13.67.90.233:/home/thanapat_window/. = ย้ายโฟลเดอร์เข้าไดฟ์ scp -r ชื่อโฟลเดอร์/ชื่อ cloud@IP:/home/ชื่อเครื่อง/.
