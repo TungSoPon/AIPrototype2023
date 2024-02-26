@@ -85,6 +85,15 @@ code python_subprocess.py  = การสร้าง VScode Python
 - static เอาไว้ใช้เก็บไฟล์ static(ไฟล์ที่ไม่มีการเปลี่ยนแปลงของคอนเทนต์) ต่าง ๆ เช่น JavaScript(js), CSS และไฟล์รูปภาพนามสกุลต่าง ๆ เช่น jpg, png เป็นต้น ซึ่งเราจะต้องเก็บไฟล์เหล่านี้ ไว้ที่โฟลเดอร์ static
 
 # คาบ 9
+- Classical แปลงให้อยู่ในรูป Vector ชุดของตัวเลข {x1,x2,x3,…,xn}
+- Deep Learning มี Feature engineering , Histogram of Oriented Gradients , Image , Sobel filter
+![image](https://github.com/TungSoPon/AIPrototype2023/assets/108257588/b70737e1-be63-45ff-b08e-ea3d9125815d)
+
+![image](https://github.com/TungSoPon/AIPrototype2023/assets/108257588/02878094-2cf7-4af2-bf3e-ef2b076d74d9)
+- ผลรวมของ sum > 0 จะผ่าน activation function → output = 1 แต่ค่าจริงๆ = 0
+- ผลรวมของ sum < 0 จะผ่าน avtivation function → output = 0
+- 
+# คาบ 10
 ![Screenshot 2024-02-27 043334](https://github.com/TungSoPon/AIPrototype2023/assets/108257588/897c67e4-e6cf-40a2-ac5c-f8f36a578806)
 
 - Input Node ขึ้นอยู่กับ feature = n
@@ -101,4 +110,13 @@ code python_subprocess.py  = การสร้าง VScode Python
 
 -ค่า Loss สามารถหาได้จาก
 ![image](https://github.com/TungSoPon/AIPrototype2023/assets/108257588/488586bc-f6ff-48e9-bbd1-1c9b2bec9b1f)
+
+# คาบ 11
+- .summary() ใช้เพื่อดูโมเดล
+ ![image](https://github.com/TungSoPon/AIPrototype2023/assets/108257588/690909dd-645c-4843-834b-4b0a4956546d)
+- Flatten เอาพารามิเตอร์มายืดเป็นเส้นตรง
+- ผ่าน Dense = fully connected
+- output = 10 class
+- ต้องทำให้ Data Train Test เหมือนกัน
+![image](https://github.com/TungSoPon/AIPrototype2023/assets/108257588/b26c8f7f-82d6-41a4-a008-e1c243942dad)
 
