@@ -66,41 +66,67 @@ main function (flow follow after this)
 
 # คาบ 5
 - การบ้าน
-import argparse
+from crypt import methods
+from flask import Flask, request, render_template, make_response
+import sys
+import json
 
-def parse_input():
-    parser = argparse.ArgumentParser()
+app = Flask(__name__)
+##api
+@app.route('/request', methods={'POST'})
+def web_service_API():
 
-    parser.add_argument(
-        '--num',
-        type=int,
-        required=True,
-        help='input for the multiplyby9 function'
-    )
+    payload = request.data.decode("utf-8")
+    inmessage = json.loads(payload)
 
-    parser.add_argument(
-        '--XX',
-        type=int,
-        default=7,
-        help='input for XX'
-    )
+    print(inmessage)
 
-    args = parser.parse_args()
-    return args
+    json_data = json.dumps({'y': 'received!'})
+    return json_data
 
-def printHello():
-    print("Hello world")
+@app.route("/") # ถ้าจะใช้คำสั่งนี้ไม่ต้องมี / ก็ได้
+def helloworld():
+    return "Hello, World!"
 
-def multiplyby9(inputV):
-    print(9 * inputV)
+@app.route("/name") # ถ้าจะใช้คำสั่งนี้ต้องมี /name
+def hellotung(): 
+    return "Hello, Tung!"
 
-if __name__ == "__main__":
-    input_V = parse_input()
-    print(f'the input XX is {input_V.XX}')
-    print("we are in the main function")
-    multiplyby9(input_V.num)
-    printHello()
+@app.route("/home", methods=['POST','GET'])
+def homefn():
+    if request.method == "GET":
+       print('we are in home(GET)', file=sys.stdout)
+       name = request.args.get('fname')
+       print(name, file=sys.stdout)
+       return render_template("home.html",name=name)
+    
+    elif request.method == "POST":
+       print('we are in home(POST)', file=sys.stdout)
+       namein = request.form.get('fname')
+       lastnamein = request.form.get('lname')
+       print(namein, file=sys.stdout)
+       print(lastnamein, file=sys.stdout)
+       return render_template("home.html",name=namein)
+    
+@app.route('/upload', methods=['GET', 'POST'])
+def upload_file():
+    if request.method == 'POST':
+        file = request.files['file']
+        file.save('filename')
+        return render_template("home.html",name='uplond completed')
+        
+    return '''
+    <!doctype html>
+    <title>Upload new File</title>
+    <h1>Upload new File</h1>
+    <form method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form>
+    '''
 
+if __name__ == "__main__": # ต้อง IP VM เราแล้วตามด้วย :5001
+    app.run(host='0.0.0.0' ,debug=True,port=5001) #0.0.0.0 คือเข้าได้ในอินเตอร์เน็ท
 
 # คาบ 6
 วิธีรันพวก python จะใช้ python ชื่อโฟลเดอร์    ตัวอย่าง python python_subprocess.py คือชื่อ
