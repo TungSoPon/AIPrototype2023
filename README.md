@@ -144,6 +144,7 @@ code python_subprocess.py  = การสร้าง VScode Python
 - / มีกี่อันก็ได้ตามที่เราสร้าง
 
 # คาบ 8
+https://github.com/TungSoPon/AIPrototype2023/blob/eef809e6b83a2ceb63d7387e91738cac7a60c867/templates/home.html
 - fw เอาไว้ใช้เก็บไลบรารี่ต่าง ๆ ที่เราได้ทำการติดตั้งผ่าน pip
 - templates เอาไว้ใช้เก็บไฟล์ HTML
 - app.py เอาไว้ใช้เขียนและเอาไว้รัน flask
