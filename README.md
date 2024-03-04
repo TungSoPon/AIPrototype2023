@@ -16,6 +16,7 @@
 - ทุกอย่างอยู่บน Internet ถ้าสาย Internet เสีย ทุกอย่างจบ งานอาจจะทำต่อไม่ได้
 
 # คาบ 2
+https://github.com/TungSoPon/AIPrototype2023/blob/e758eec5678900e422636cb581306d7853ac7d44/firstpy1.py
 - Ssh ไว้เชื่อมต่อบน cloud 
 - Scp 
 - Exit ออก
