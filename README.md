@@ -3,6 +3,7 @@
  ID : 633020444-1 : SIDS
 
 # คาบ 1
+https://github.com/TungSoPon/AIPrototype2023/blob/ce0456ad66c185e03a563d452921e0b4e771d77d/firstpy.py
 การใช้ Clound ทำ Web
 ข้อดี
 - ราคาที่ดีประหยัด ใช้แค่ไหนจ่ายแค่นั้น
@@ -36,6 +37,7 @@ https://github.com/TungSoPon/AIPrototype2023/blob/e758eec5678900e422636cb581306d
 - Ctrl+C  = ยกเลิกคำสั่ง
 
 # คาบ 3
+https://github.com/TungSoPon/AIPrototype2023/blob/e758eec5678900e422636cb581306d7853ac7d44/firstpy1.py
 - สร้างใหม่ = conda create -n mypy38(ชื่อที่เราต้องการตั้ง) python=3.8(เวอร์ชั่นเลือกเองได้)
 - $ conda activate mypy38 เริ่มใช้
 - $ conda deactivate เลิกใช้
