@@ -156,6 +156,7 @@ code python_subprocess.py  = การสร้าง VScode Python
 - ผลรวมของ sum < 0 จะผ่าน avtivation function → output = 0
 - 
 # คาบ 10
+https://github.com/TungSoPon/AIPrototype2023/blob/5c03f0fad3755c877ba46e50f0482fd659210642/Tensorflow_(Deep_Learning_Implemen.ipynb
 ![Screenshot 2024-02-27 043334](https://github.com/TungSoPon/AIPrototype2023/assets/108257588/897c67e4-e6cf-40a2-ac5c-f8f36a578806)
 
 - Input Node ขึ้นอยู่กับ feature = n
@@ -174,6 +175,7 @@ code python_subprocess.py  = การสร้าง VScode Python
 ![image](https://github.com/TungSoPon/AIPrototype2023/assets/108257588/488586bc-f6ff-48e9-bbd1-1c9b2bec9b1f)
 
 # คาบ 11 Tensorflow_(Deep_Learning_Implemen.ipynb
+https://github.com/TungSoPon/AIPrototype2023/blob/5c03f0fad3755c877ba46e50f0482fd659210642/Tensorflow_(Deep_Learning_Implemen.ipynb
 - .summary() ใช้เพื่อดูโมเดล
  ![image](https://github.com/TungSoPon/AIPrototype2023/assets/108257588/690909dd-645c-4843-834b-4b0a4956546d)
 - Flatten เอาพารามิเตอร์มายืดเป็นเส้นตรง
