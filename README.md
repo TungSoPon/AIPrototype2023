@@ -66,6 +66,7 @@ main function (flow follow after this)
 - print(”hello”) function
 
 # คาบ 5
+https://github.com/TungSoPon/AIPrototype2023/blob/9f48aa1d64121e62a9d70bcb972e9a6525eec15e/python_subprocess.py
 - การบ้าน
 from crypt import methods
 from flask import Flask, request, render_template, make_response
