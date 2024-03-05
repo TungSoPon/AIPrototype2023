@@ -2,6 +2,9 @@
  Thanapat Sopon
  ID : 633020444-1 : SIDS
 
+# WEBAPP
+http://13.67.90.233:5001/home_web
+
 # คาบ 1
 https://github.com/TungSoPon/AIPrototype2023/blob/ce0456ad66c185e03a563d452921e0b4e771d77d/firstpy.py
 การใช้ Clound ทำ Web
