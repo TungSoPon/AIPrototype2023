@@ -13,6 +13,7 @@ https://github.com/Nattakonjpg/Valolyze.git
 
 # คาบ 1
 https://github.com/TungSoPon/AIPrototype2023/blob/ce0456ad66c185e03a563d452921e0b4e771d77d/firstpy.py
+
 การใช้ Clound ทำ Web
 ข้อดี
 - ราคาที่ดีประหยัด ใช้แค่ไหนจ่ายแค่นั้น
